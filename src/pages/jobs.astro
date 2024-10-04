@@ -1,5 +1,5 @@
 ---
-import Navigation from "../components/Header.astro";
+import Header from "../components/Header.astro";
 import "../styles/global.css";
 ---
 
@@ -12,15 +12,17 @@ import "../styles/global.css";
     <title>UA Job Portal</title>
   </head>
   <body>
-    <Navigation />
+    <Header />
 
-    <h1>Jobs</h1>
+    <main>
+      <h1>Jobs</h1>
 
-    <ul>
-      <li><a href="/jobs/job-1">Senior React Developer (Remote)</a></li>
-      <li>
-        <a href="/jobs/job-2">Junior React Developer at Google (Remote)</a>
-      </li>
-    </ul>
+      <ul>
+        <li><a href="/jobs/job-1">Senior React Developer (Remote)</a></li>
+        <li>
+          <a href="/jobs/job-2">Junior React Developer at Google (Remote)</a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
