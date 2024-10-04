@@ -3,14 +3,14 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
-  <a href="/">UA Jobs Portal</a>
+  <a href="/">UA Jobs</a>
 
   <nav>
     <HeaderLink href="/">Jobs</HeaderLink>
     <HeaderLink href="/about/">About</HeaderLink>
   </nav>
 
-  <a href="/">Telegram</a>
+  <a href="/" class="social-links">Telegram</a>
 </header>
 
 <style>
@@ -37,5 +37,11 @@ import HeaderLink from "./HeaderLink.astro";
   nav a.active {
     text-decoration: none;
     border-bottom-color: var(--accent);
+  }
+
+  @media (max-width: 720px) {
+    .social-links {
+      display: none;
+    }
   }
 </style>
