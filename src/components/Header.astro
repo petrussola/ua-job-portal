@@ -3,13 +3,13 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
-  <a href="/" id="logo">UA Jobs</a>
+  <a href="/" class="logo"><h1>UA Jobs</h1> </a>
 
   <nav>
     <HeaderLink href="/">Home</HeaderLink>
     <HeaderLink href="/openings">Openings</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
-    <HeaderLink href="/about/" id="about">About</HeaderLink>
+    <HeaderLink href="/about/" class="about">About</HeaderLink>
   </nav>
 
   <a href="/" class="social-links">Telegram</a>
@@ -24,6 +24,10 @@ import HeaderLink from "./HeaderLink.astro";
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .logo h1 {
+    font-size: 1.5em;
   }
 
   nav {
@@ -46,7 +50,9 @@ import HeaderLink from "./HeaderLink.astro";
       display: grid;
     }
 
-    #logo, #about, .social-links {
+    .logo,
+    .about,
+    .social-links {
       display: none;
     }
   }
