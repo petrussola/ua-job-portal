@@ -1,0 +1,22 @@
+---
+import dayjs from "dayjs";
+
+const today = dayjs();
+---
+
+<footer>
+  &copy; {`${today.year()} Made by `}<span
+    ><a href="https://www.peresola.com" target="_blank">peresola.com</a>{
+      ` and managed by `
+    }<a href="/">Katya</a></span
+  >
+</footer>
+
+<style>
+  footer {
+    padding: 2em 1em 6em 1em;
+    background: linear-gradient(var(--gray-gradient)) no-repeat;
+    color: rgb(var(--gray));
+    text-align: center;
+  }
+</style>
