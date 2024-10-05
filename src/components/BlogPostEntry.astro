@@ -2,6 +2,9 @@
 import type { BlogpostProps } from "../types/types";
 import FormattedDate from "./FormattedDate.astro";
 
+const DEFAULT_IMAGE =
+  "https://images.unsplash.com/photo-1485286162995-aa63d31c06cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
 type Props = {
   post: BlogpostProps;
 };
@@ -12,7 +15,7 @@ const { post } = Astro.props;
 <div class="post-entry-wrapper">
   <a href={post.url}>
     <div class="image-wrapper">
-      <img src={post.frontmatter.image} alt="" />
+      <img src={post.frontmatter.image ?? DEFAULT_IMAGE} alt="" />
     </div>
 
     <h4>{post.frontmatter.title}</h4>
@@ -37,3 +40,4 @@ const { post } = Astro.props;
     box-shadow: var(--box-shadow);
   }
 </style>
+<!-- <Debug answer={post.frontmatter.image} /> -->

@@ -2,7 +2,6 @@
 layout: ../../layouts/MarkdownLayout.astro
 title: "Blog post 3"
 pubDate: 2024-10-04
-companyDescription: "Experlogix is a leading provider of Configure Price Quote (CPQ) solutions, dedicated to enhancing the digital commerce experience for businesses worldwide. We specialize in delivering innovative tools that streamline the sales process, empowering our clients to configure complex products and services with ease. As we continue to push the boundaries of what’s possible, we’re integrating advanced AI technologies to create more intuitive and powerful user experiences."
 isActive: true
 isOpening: false
 image: https://images.unsplash.com/photo-1561629625-edea42c6da34?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
