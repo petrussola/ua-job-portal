@@ -1,15 +1,15 @@
 ---
 import OpeningsList from "../components/OpeningsList.astro";
+import { fetchOpenings } from "../helpers/fetch-openings.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import type { OpeningProps } from "../types/types";
 
-const allOpenings = await Astro.glob<OpeningProps>("./openings/*md");
+const allOpenings = await fetchOpenings();
 const reversedOpenings = allOpenings.reverse();
 const activeOpenings = reversedOpenings.filter(
-  (job) => job.frontmatter.isActive
+  (job) => job.frontmatter.isActive,
 );
 const inactiveOpenings = reversedOpenings.filter(
-  (job) => !job.frontmatter.isActive
+  (job) => !job.frontmatter.isActive,
 );
 
 const pageTitle = "Active jobs";

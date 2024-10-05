@@ -1,0 +1,7 @@
+---
+import type { OpeningProps } from "../types/types";
+
+export const fetchOpenings = async () => {
+  return await Astro.glob<OpeningProps>("../pages/openings/*md");
+};
+---
