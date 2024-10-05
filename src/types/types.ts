@@ -24,6 +24,7 @@ type BlogpostFrontmatterProps = {
   companyDescription: string;
   tags: string[];
   isOpening: boolean;
+  image: string;
 };
 
 export type BlogpostProps = {

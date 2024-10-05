@@ -1,11 +1,11 @@
 ---
-import type { OpeningProps } from "../types/types";
+import type { BlogpostProps, OpeningProps } from "../types/types";
 
 export const fetchOpenings = async () => {
   return await Astro.glob<OpeningProps>("../pages/openings/*md");
 };
 
 export const fetchBlogposts = async () => {
-  return await Astro.glob<OpeningProps>("../pages/blog/*md");
+  return await Astro.glob<BlogpostProps>("../pages/blog/*md");
 };
 ---

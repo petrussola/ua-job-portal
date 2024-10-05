@@ -1,0 +1,39 @@
+---
+import type { BlogpostProps } from "../types/types";
+import FormattedDate from "./FormattedDate.astro";
+
+type Props = {
+  post: BlogpostProps;
+};
+
+const { post } = Astro.props;
+---
+
+<div class="post-entry-wrapper">
+  <a href={post.url}>
+    <div class="image-wrapper">
+      <img src={post.frontmatter.image} alt="" />
+    </div>
+
+    <h4>{post.frontmatter.title}</h4>
+
+    <p><FormattedDate date={post.frontmatter.pubDate} /></p>
+  </a>
+</div>
+
+<style>
+  .post-entry-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  a:hover .image-wrapper img {
+    box-shadow: var(--box-shadow);
+  }
+</style>
