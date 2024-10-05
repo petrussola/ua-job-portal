@@ -1,35 +1,20 @@
 ---
-import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 
 const pageTitle = "About UA Jobs Portal";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header />
+<BaseLayout pageTitle={pageTitle}>
+  <h2>... and my new Astro site!</h2>
 
-    <main>
-      <h1>{pageTitle}</h1>
+  <p>
+    I am working through Astro's introductory tutorial. This is the second page
+    on my website, and it's the first one I built myself!
+  </p>
 
-      <h2>... and my new Astro site!</h2>
-
-      <p>
-        I am working through Astro's introductory tutorial. This is the second
-        page on my website, and it's the first one I built myself!
-      </p>
-
-      <p>
-        This site will update as I complete more of the tutorial, so keep
-        checking back and see how my journey is going!
-      </p>
-    </main>
-  </body>
-</html>
+  <p>
+    This site will update as I complete more of the tutorial, so keep checking
+    back and see how my journey is going!
+  </p>
+</BaseLayout>
