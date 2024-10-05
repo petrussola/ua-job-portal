@@ -2,13 +2,14 @@ type OpeningFrontmatterProps = {
   layout: string;
   title: string;
   pubDate: string;
+  company: string;
   companyDescription: string;
   location: string;
   author: string;
   url: string;
   tags: string[];
   isActive: boolean;
-  isOpening: boolean
+  isOpening: boolean;
 };
 
 export type OpeningProps = {
@@ -23,7 +24,7 @@ type BlogpostFrontmatterProps = {
   pubDate: string;
   companyDescription: string;
   tags: string[];
-  isOpening: boolean
+  isOpening: boolean;
 };
 
 export type BlogpostProps = {

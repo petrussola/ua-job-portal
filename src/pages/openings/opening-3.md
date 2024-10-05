@@ -1,7 +1,8 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "Junior React Developer at Google"
-pubDate: 2024-10-05
+title: "Junior React Developer"
+pubDate: "2024-10-05"
+company: "Google"
 companyDescription: "Experlogix is a leading provider of Configure Price Quote (CPQ) solutions, dedicated to enhancing the digital commerce experience for businesses worldwide. We specialize in delivering innovative tools that streamline the sales process, empowering our clients to configure complex products and services with ease. As we continue to push the boundaries of what’s possible, we’re integrating advanced AI technologies to create more intuitive and powerful user experiences."
 location: "Remote"
 author: "Katya"

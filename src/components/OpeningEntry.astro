@@ -1,5 +1,6 @@
 ---
 import type { OpeningProps } from "../types/types";
+import FormattedDate from "./FormattedDate.astro";
 
 type Props = {
   opening: OpeningProps;
@@ -9,9 +10,42 @@ const { opening } = Astro.props;
 ---
 
 <li>
-  <a href={opening.url}
-    >{
-      `${opening.frontmatter.pubDate.slice(0, 10)} - ${opening.frontmatter.title} (${opening.frontmatter.location})`
-    }</a
-  >
+  <a href={opening.url}>
+    <div class="details-wrapper">
+      <p class="date">
+        <FormattedDate date={opening.frontmatter.pubDate} />
+      </p>
+      <h4>{opening.frontmatter.title}</h4>
+    </div>
+
+    <div class="details-wrapper">
+      <p>{opening.frontmatter.company}</p>
+
+      <p>{opening.frontmatter.location}</p>
+    </div>
+  </a>
 </li>
+
+<style>
+  li {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(var(--gray));
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  li a:hover {
+    color: inherit;
+  }
+
+  li:hover {
+    box-shadow: var(--box-shadow);
+  }
+
+  .details-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 16px;
+  }
+</style>
