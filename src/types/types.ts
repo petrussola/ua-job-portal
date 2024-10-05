@@ -15,3 +15,17 @@ export type OpeningProps = {
   file: string;
   url: string;
 };
+
+type BlogpostFrontmatterProps = {
+  layout: string;
+  title: string;
+  pubDate: string;
+  companyDescription: string;
+  tags: string[];
+};
+
+export type BlogpostProps = {
+  frontmatter: BlogpostFrontmatterProps;
+  file: string;
+  url: string;
+};
