@@ -12,9 +12,7 @@ const pageTitle = "Jobs";
       allJobs.map((job) => {
         return (
           <li>
-            <a
-              href={job.url}
-            >{`${job.frontmatter.title} (${job.frontmatter.location})`}</a>
+            <a href={job.url}>{`${job.frontmatter.pubDate.slice(0, 10)} - ${job.frontmatter.title} (${job.frontmatter.location})`}</a>
           </li>
         );
       })
