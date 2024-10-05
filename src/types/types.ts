@@ -8,7 +8,6 @@ type OpeningFrontmatterProps = {
   author: string;
   url: string;
   tags: string[];
-  isActive: boolean;
   isOpening: boolean;
 };
 

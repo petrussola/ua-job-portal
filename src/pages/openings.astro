@@ -5,20 +5,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const allOpenings = await fetchOpenings();
 const reversedOpenings = allOpenings.reverse();
-const activeOpenings = reversedOpenings.filter(
-  (job) => job.frontmatter.isActive,
-);
-const inactiveOpenings = reversedOpenings.filter(
-  (job) => !job.frontmatter.isActive,
-);
 
-const pageTitle = "Active jobs";
+const pageTitle = "Openings";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <OpeningsList openingsList={activeOpenings} />
-
-  <h2>Inactive jobs</h2>
-
-  <OpeningsList openingsList={inactiveOpenings} />
+  <OpeningsList openingsList={reversedOpenings} />
 </BaseLayout>
