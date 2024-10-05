@@ -1,0 +1,13 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <p>Added on {frontmatter.pubDate.slice(0, 10)}</p>
+
+  <p>{frontmatter.companyDescription}</p>
+
+  <slot />
+</BaseLayout>
