@@ -1,0 +1,18 @@
+---
+import type { JobListingProps } from "../types/types";
+import JobEntry from "./JobEntry.astro";
+
+type Props = {
+  jobsList: JobListingProps[];
+};
+
+const { jobsList } = Astro.props;
+---
+
+<ul>
+  {
+    jobsList.map((job) => {
+      return <JobEntry job={job} />;
+    })
+  }
+</ul>
