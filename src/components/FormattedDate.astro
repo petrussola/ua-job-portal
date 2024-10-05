@@ -7,7 +7,7 @@ type Props = {
 
 const { date } = Astro.props;
 
-const formattedDate = dayjs(date).format("MMM, D YYYY");
+const formattedDate = dayjs(date).format("MMM, D");
 ---
 
 <time datetime={formattedDate}>
