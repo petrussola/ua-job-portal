@@ -1,6 +1,6 @@
 ---
 import OpeningsList from "../components/OpeningsList.astro";
-import { fetchOpenings } from "../helpers/fetch-openings.astro";
+import { fetchOpenings } from "../helpers/fetch-data.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const allOpenings = await fetchOpenings();

@@ -1,10 +1,10 @@
 ---
+import { fetchBlogposts } from "../helpers/fetch-data.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import type { BlogpostProps } from "../types/types";
 
 const pageTitle = "Blog";
 
-const allPosts = await Astro.glob<BlogpostProps>("./blog/*md");
+const allPosts = await fetchBlogposts();
 ---
 
 <BaseLayout pageTitle={pageTitle}>
