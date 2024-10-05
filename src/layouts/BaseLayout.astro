@@ -4,9 +4,10 @@ import "../styles/global.css";
 
 type Props = {
   pageTitle: string;
+  shouldDisplayBack?: boolean;
 };
 
-const { pageTitle } = Astro.props;
+const { pageTitle, shouldDisplayBack = false } = Astro.props;
 ---
 
 <html lang="en">
@@ -21,9 +22,17 @@ const { pageTitle } = Astro.props;
     <Header />
 
     <main>
+      {shouldDisplayBack && <button id="back-button">Back</button>}
+
       <h1>{pageTitle}</h1>
 
       <slot />
     </main>
   </body>
+
+  <script>
+    document
+      .getElementById("back-button")
+      ?.addEventListener("click", () => window.history.back());
+  </script>
 </html>
