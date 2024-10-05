@@ -2,20 +2,41 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const allJobs = await Astro.glob("./jobs/*md");
+const reverseActiveJobs = allJobs
+  .filter((job) => job.frontmatter.isActive)
+  .reverse();
+const reverseInactiveJobs = allJobs
+  .filter((job) => !job.frontmatter.isActive)
+  .reverse();
 
-const pageTitle = "Jobs";
+const pageTitle = "Active jobs";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <ul>
     {
-      allJobs.map((job) => {
+      reverseActiveJobs.map((job) => {
         return (
           <li>
-            <a href={job.url}>{`${job.frontmatter.pubDate.slice(0, 10)} - ${job.frontmatter.title} (${job.frontmatter.location})`}</a>
+            <a
+              href={job.url}
+            >{`${job.frontmatter.pubDate.slice(0, 10)} - ${job.frontmatter.title} (${job.frontmatter.location})`}</a>
           </li>
         );
       })
     }
   </ul>
+
+  <h2>Inactive jobs</h2>
+  {
+    reverseInactiveJobs.map((job) => {
+      return (
+        <li>
+          <a
+            href={job.url}
+          >{`${job.frontmatter.pubDate.slice(0, 10)} - ${job.frontmatter.title} (${job.frontmatter.location})`}</a>
+        </li>
+      );
+    })
+  }
 </BaseLayout>

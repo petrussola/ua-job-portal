@@ -6,6 +6,7 @@ companyDescription: "Experlogix is a leading provider of Configure Price Quote (
 location: "Remote"
 url: "https://experlogix.bamboohr.com/careers/310"
 tags: ["react", "frontend", "experlog"]
+isActive: true
 ---
 
 ## Job description

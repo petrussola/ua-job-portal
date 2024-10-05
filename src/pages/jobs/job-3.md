@@ -7,7 +7,7 @@ location: "Remote"
 author: "Katya"
 url: "https://experlogix.bamboohr.com/careers/310"
 tags: ["react", "frontend", "google"]
-isActive: true
+isActive: false
 ---
 
 # Senior React Developer at Google
