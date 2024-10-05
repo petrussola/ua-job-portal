@@ -8,6 +8,7 @@ type OpeningFrontmatterProps = {
   url: string;
   tags: string[];
   isActive: boolean;
+  isOpening: boolean
 };
 
 export type OpeningProps = {
@@ -22,6 +23,7 @@ type BlogpostFrontmatterProps = {
   pubDate: string;
   companyDescription: string;
   tags: string[];
+  isOpening: boolean
 };
 
 export type BlogpostProps = {
