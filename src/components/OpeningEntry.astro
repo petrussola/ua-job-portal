@@ -1,0 +1,17 @@
+---
+import type { OpeningProps } from "../types/types";
+
+type Props = {
+  opening: OpeningProps;
+};
+
+const { opening } = Astro.props;
+---
+
+<li>
+  <a href={opening.url}
+    >{
+      `${opening.frontmatter.pubDate.slice(0, 10)} - ${opening.frontmatter.title} (${opening.frontmatter.location})`
+    }</a
+  >
+</li>

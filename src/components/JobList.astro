@@ -1,9 +1,9 @@
 ---
-import type { JobListingProps } from "../types/types";
-import JobEntry from "./JobEntry.astro";
+import type { OpeningProps } from "../types/types";
+import JobEntry from "./OpeningEntry.astro";
 
 type Props = {
-  jobsList: JobListingProps[];
+  jobsList: OpeningProps[];
 };
 
 const { jobsList } = Astro.props;
@@ -12,7 +12,7 @@ const { jobsList } = Astro.props;
 <ul>
   {
     jobsList.map((job) => {
-      return <JobEntry job={job} />;
+      return <JobEntry opening={job} />;
     })
   }
 </ul>

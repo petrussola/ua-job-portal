@@ -1,0 +1,18 @@
+---
+import type { OpeningProps } from "../types/types";
+import OpeningEntry from "./OpeningEntry.astro";
+
+type Props = {
+  openingsList: OpeningProps[];
+};
+
+const { openingsList } = Astro.props;
+---
+
+<ul>
+  {
+    openingsList.map((job) => {
+      return <OpeningEntry opening={job} />;
+    })
+  }
+</ul>

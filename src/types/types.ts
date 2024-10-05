@@ -1,4 +1,4 @@
-type JobListingFrontmatterProps = {
+type OpeningFrontmatterProps = {
   layout: string;
   title: string;
   pubDate: string;
@@ -10,8 +10,8 @@ type JobListingFrontmatterProps = {
   isActive: boolean;
 };
 
-export type JobListingProps = {
-  frontmatter: JobListingFrontmatterProps;
+export type OpeningProps = {
+  frontmatter: OpeningFrontmatterProps;
   file: string;
   url: string;
 };
