@@ -1,0 +1,17 @@
+---
+import type { JobListingProps } from "../types/types";
+
+type Props = {
+  job: JobListingProps;
+};
+
+const { job } = Astro.props;
+---
+
+<li>
+  <a href={job.url}
+    >{
+      `${job.frontmatter.pubDate.slice(0, 10)} - ${job.frontmatter.title} (${job.frontmatter.location})`
+    }</a
+  >
+</li>

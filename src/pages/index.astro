@@ -1,7 +1,9 @@
 ---
+import JobEntry from "../components/JobEntry.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import type { JobListingProps } from "../types/types";
 
-const allJobs = await Astro.glob("./jobs/*md");
+const allJobs = await Astro.glob<JobListingProps>("./jobs/*md");
 const reverseActiveJobs = allJobs
   .filter((job) => job.frontmatter.isActive)
   .reverse();
@@ -16,13 +18,7 @@ const pageTitle = "Active jobs";
   <ul>
     {
       reverseActiveJobs.map((job) => {
-        return (
-          <li>
-            <a
-              href={job.url}
-            >{`${job.frontmatter.pubDate.slice(0, 10)} - ${job.frontmatter.title} (${job.frontmatter.location})`}</a>
-          </li>
-        );
+        return <JobEntry job={job} />;
       })
     }
   </ul>
@@ -30,13 +26,7 @@ const pageTitle = "Active jobs";
   <h2>Inactive jobs</h2>
   {
     reverseInactiveJobs.map((job) => {
-      return (
-        <li>
-          <a
-            href={job.url}
-          >{`${job.frontmatter.pubDate.slice(0, 10)} - ${job.frontmatter.title} (${job.frontmatter.location})`}</a>
-        </li>
-      );
+      return <JobEntry job={job} />;
     })
   }
 </BaseLayout>
