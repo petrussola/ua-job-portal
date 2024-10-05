@@ -1,6 +1,8 @@
 ---
 import Header from "../components/Header.astro";
 import "../styles/global.css";
+
+const allJobs = await Astro.glob("./jobs/*md");
 ---
 
 <html lang="en">
@@ -18,6 +20,15 @@ import "../styles/global.css";
       <h1>Jobs</h1>
 
       <ul>
+        {
+          allJobs.map((job) => {
+            return (
+              <li>
+                <a>{job.title}</a>
+              </li>
+            );
+          })
+        }
         <li><a href="/jobs/job-1">Senior React Developer (Remote)</a></li>
         <li>
           <a href="/jobs/job-2">Junior React Developer at Google (Remote)</a>

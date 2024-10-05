@@ -1,9 +1,23 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
+const allJobs = await Astro.glob("./jobs/*md");
+
 const pageTitle = "Jobs";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <p>kasdkank</p>
+  <ul>
+    {
+      allJobs.map((job) => {
+        return (
+          <li>
+            <a
+              href={job.url}
+            >{`${job.frontmatter.title} (${job.frontmatter.location})`}</a>
+          </li>
+        );
+      })
+    }
+  </ul>
 </BaseLayout>
