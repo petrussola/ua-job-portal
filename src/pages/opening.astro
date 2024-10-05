@@ -3,7 +3,7 @@ import JobList from "../components/OpeningsList.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import type { OpeningProps } from "../types/types";
 
-const allJobs = await Astro.glob<OpeningProps>("./jobs/*md");
+const allJobs = await Astro.glob<OpeningProps>("./openings/*md");
 const reversedJobs = allJobs.reverse();
 const activeJobs = reversedJobs.filter((job) => job.frontmatter.isActive);
 const inactiveJobs = reversedJobs.filter((job) => !job.frontmatter.isActive);
