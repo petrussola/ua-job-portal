@@ -5,13 +5,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Blog";
 
-const allPosts = await fetchBlogposts();
+const blogPosts = await fetchBlogposts();
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
   <ul>
     {
-      allPosts.map((post) => {
+      blogPosts.map((post) => {
         return <BlogPostEntry post={post} />;
       })
     }

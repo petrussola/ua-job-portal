@@ -4,11 +4,10 @@ import { fetchOpenings } from "../helpers/fetch-data.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const allOpenings = await fetchOpenings();
-const reversedOpenings = allOpenings.reverse();
 
 const pageTitle = "Openings";
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
-  <OpeningsList openingsList={reversedOpenings} />
+  <OpeningsList openingsList={allOpenings} />
 </BaseLayout>

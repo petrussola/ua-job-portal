@@ -2,10 +2,14 @@
 import type { BlogpostProps, OpeningProps } from "../types/types";
 
 export const fetchOpenings = async () => {
-  return await Astro.glob<OpeningProps>("../pages/openings/*md");
+  const openings = await Astro.glob<OpeningProps>("../pages/openings/*md");
+
+  return openings.reverse();
 };
 
 export const fetchBlogposts = async () => {
-  return await Astro.glob<BlogpostProps>("../pages/blog/*md");
+  const posts = await Astro.glob<BlogpostProps>("../pages/blog/*md");
+
+  return posts.reverse();
 };
 ---
