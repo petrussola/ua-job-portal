@@ -5,9 +5,41 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const allOpenings = await fetchOpenings();
 
+const uniqueCompanies = [
+  ...new Set(allOpenings.map((opening) => opening.frontmatter.company)),
+];
+
 const pageTitle = "Openings";
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
+  <div class="company-tags-wrapper">
+    {
+      uniqueCompanies.map((company) => {
+        return <a href={`/companies/${company.toLowerCase()}`}>{company}</a>;
+      })
+    }
+  </div>
+
   <OpeningsList openingsList={allOpenings} />
 </BaseLayout>
+
+<style>
+  .company-tags-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    a {
+      padding: 8px 16px;
+      background-color: rgb(var(--gray));
+      color: white;
+      border-radius: 24px;
+    }
+
+    a:hover {
+      box-shadow: var(--box-shadow);
+    }
+  }
+</style>

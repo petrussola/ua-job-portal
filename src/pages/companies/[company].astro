@@ -32,7 +32,7 @@ const filteredOpenings = openings.filter(
 );
 ---
 
-<BaseLayout pageTitle={capitalisedCompany}>
+<BaseLayout pageTitle={capitalisedCompany} shouldDisplayBack>
   <p>Openings in {capitalisedCompany}</p>
 
   <OpeningsList openingsList={filteredOpenings} />
