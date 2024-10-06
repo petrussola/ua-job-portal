@@ -7,9 +7,14 @@ import "../styles/global.css";
 type Props = {
   pageTitle: string;
   shouldDisplayBack?: boolean;
+  displayContactBanner?: boolean;
 };
 
-const { pageTitle, shouldDisplayBack = false } = Astro.props;
+const {
+  pageTitle,
+  shouldDisplayBack = false,
+  displayContactBanner = false,
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -26,7 +31,7 @@ const { pageTitle, shouldDisplayBack = false } = Astro.props;
     <main>
       {shouldDisplayBack && <button id="back-button">Back</button>}
 
-      <ContactBanner />
+      {displayContactBanner && <ContactBanner />}
 
       <slot />
     </main>

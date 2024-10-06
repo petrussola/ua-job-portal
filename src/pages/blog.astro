@@ -8,13 +8,11 @@ const pageTitle = "Blog";
 const allPosts = await fetchBlogposts();
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} displayContactBanner>
   <ul>
     {
       allPosts.map((post) => {
-        return (
-          <BlogPostEntry post={post} />
-        );
+        return <BlogPostEntry post={post} />;
       })
     }
   </ul>
