@@ -10,22 +10,5 @@ const pageTitle = "Openings";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <a href="#">
-    <div class="banner">
-      If you want to publish your openings, reach out to us here
-    </div>
-  </a>
-
   <OpeningsList openingsList={reversedOpenings} />
 </BaseLayout>
-
-<style>
-  .banner {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(var(--gray));
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-  }
-</style>
