@@ -4,12 +4,22 @@ import { fetchOpenings } from "../../helpers/fetch-data.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
-  const openingList = await fetchOpenings();
+  const allOpenings = await fetchOpenings();
 
-  return [
-    { params: { company: "google" }, props: { openings: openingList } },
-    { params: { company: "experlogix" }, props: { openings: openingList } },
+  const uniqueCompanies = [
+    ...new Set(allOpenings.map((opening) => opening.frontmatter.company)),
   ];
+
+  return uniqueCompanies.map((company) => {
+    const filteredOpenings = allOpenings.filter(
+      (opening) => opening.frontmatter.company === company,
+    );
+
+    return {
+      params: { company: company.toLowerCase() },
+      props: { openings: filteredOpenings },
+    };
+  });
 }
 
 const { company } = Astro.params;
