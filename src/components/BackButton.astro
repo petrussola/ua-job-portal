@@ -1,0 +1,27 @@
+---
+
+---
+
+<button class="back-button"><p>Go back</p></button>
+
+<style>
+  .back-button {
+    border: none;
+    background-color: rgb(var(--gray));
+    padding: 8px 24px;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    p {
+        font-size: medium;
+    }
+  }
+</style>
+
+<script>
+  document
+    .querySelector(".back-button")
+    ?.addEventListener("click", () => window.history.back());
+</script>
