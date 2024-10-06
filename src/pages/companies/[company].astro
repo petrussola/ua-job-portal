@@ -1,0 +1,29 @@
+---
+import OpeningsList from "../../components/OpeningsList.astro";
+import { fetchOpenings } from "../../helpers/fetch-data.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const openingList = await fetchOpenings();
+
+  return [
+    { params: { company: "google" }, props: { openings: openingList } },
+    { params: { company: "experlogix" }, props: { openings: openingList } },
+  ];
+}
+
+const { company } = Astro.params;
+const { openings } = Astro.props;
+
+const capitalisedCompany = company[0]?.toUpperCase() + company.slice(1);
+
+const filteredOpenings = openings.filter(
+  (opening) => capitalisedCompany === opening.frontmatter.company,
+);
+---
+
+<BaseLayout pageTitle={capitalisedCompany}>
+  <p>Openings in {capitalisedCompany}</p>
+
+  <OpeningsList openingsList={filteredOpenings} />
+</BaseLayout>
