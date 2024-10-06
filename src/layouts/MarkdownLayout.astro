@@ -1,13 +1,41 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import dayjs from "dayjs";
 
 const { frontmatter } = Astro.props;
+const formattedData = dayjs(frontmatter.pubDate).format("MMM, D YYYY");
 ---
 
 <BaseLayout pageTitle={frontmatter.title} shouldDisplayBack>
-  <p>Added on {frontmatter.pubDate.slice(0, 10)}</p>
+  <div class="markdown-wrapper">
+    <div class="markdown-header">
+      <h1>{frontmatter.title}</h1>
 
-  {frontmatter.isOpening && <p>{frontmatter.companyDescription}</p>}
+      <p class="publish-date">Published on: {formattedData}</p>
+    </div>
 
-  <slot />
+    {frontmatter.isOpening && <p>{frontmatter.companyDescription}</p>}
+
+    <slot />
+  </div>
 </BaseLayout>
+
+<style>
+  .markdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .markdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .publish-date {
+    margin-bottom: 24px;
+    color: rgb(var(--gray));
+    font-style: italic;
+  }
+</style>
