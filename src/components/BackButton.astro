@@ -2,21 +2,23 @@
 
 ---
 
-<button class="back-button"><p>Go back</p></button>
+<button class="back-button">Back</button>
 
 <style>
-  .back-button {
-    border: none;
+  button {
+    border: 1px solid transparent;
     background-color: rgb(var(--gray));
     padding: 8px 24px;
-    color: white;
-    border-radius: 4px;
+    color: rgb(var(--gray-light));
+    border-radius: 24px;
     margin-bottom: 24px;
     cursor: pointer;
+  }
 
-    p {
-        font-size: medium;
-    }
+  button:hover {
+    background-color: rgb(var(--gray-light));
+    color: rgb(var(--gray));
+    border: 1px solid rgb(var(--gray));
   }
 </style>
 

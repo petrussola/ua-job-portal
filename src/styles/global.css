@@ -44,16 +44,12 @@ main {
   width: 720px;
   max-width: calc(100% - 2em);
   margin: auto;
-  padding: 3em 1em;
+  padding: 24px;
 }
 
 a {
   text-decoration: none;
   color: var(--black);
-}
-
-a:hover {
-  color: var(--accent);
 }
 
 ul {

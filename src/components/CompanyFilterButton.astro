@@ -1,0 +1,25 @@
+---
+type Props = {
+  company: string;
+};
+
+const { company } = Astro.props;
+---
+
+<a href={`/companies/${company.toLowerCase()}`}>{company}</a>
+
+<style>
+  a {
+    padding: 8px 16px;
+    background-color: rgb(var(--gray));
+    color: white;
+    border-radius: 24px;
+    border: 1px solid transparent;
+  }
+
+  a:hover {
+    background-color: rgb(var(--gra-light));
+    color: rgb(var(--gray));
+    border: 1px solid rgb(var(--gray));
+  }
+</style>

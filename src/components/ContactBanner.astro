@@ -2,22 +2,30 @@
 
 ---
 
-<a href="#" class="banner">
-  Click here if you want to publish your openings with us
-</a>
+<div class="banner">
+  <p>
+    Interested in posting your vacancies with us? Contact us <a href="#">here</a
+    >
+  </p>
+</div>
 
 <style>
+  a {
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(var(--gray));
+  }
+
   a:hover {
-    box-shadow: var(--box-shadow);
+    color: rgb(var(--gray-dark));
   }
 
   .banner {
     display: flex;
     justify-content: center;
-    background-color: rgb(var(--gray));
-    color: white;
-    padding: 12px;
-    border-radius: 24px;
     margin-bottom: 24px;
+
+    p {
+      color: rgb(var(--gray));
+    }
   }
 </style>
