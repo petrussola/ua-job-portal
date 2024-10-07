@@ -7,7 +7,7 @@ type Props = OpeningProps;
 
 const { frontmatter } = Astro.props;
 const formattedData = dayjs(frontmatter.pubDate).format("MMM, D YYYY");
-const displayUrl = frontmatter.link.split("//")[1];
+const displayUrl = frontmatter.link ? frontmatter.link.split("//")[1] : "";
 ---
 
 <BaseLayout pageTitle={frontmatter.title} shouldDisplayBack>
@@ -17,13 +17,20 @@ const displayUrl = frontmatter.link.split("//")[1];
 
       <p class="publish-date">Published on: {formattedData}</p>
 
-      <p class="apply-link">
-        Apply today at: <a
-          href={frontmatter.link}
-          target="_blank"
-          referrerpolicy="no-referrer">{displayUrl}</a
-        >
-      </p>
+      {
+        !!displayUrl && (
+          <p class="apply-link">
+            Apply today at:{" "}
+            <a
+              href={frontmatter.link}
+              target="_blank"
+              referrerpolicy="no-referrer"
+            >
+              {displayUrl}
+            </a>
+          </p>
+        )
+      }
     </div>
 
     {frontmatter.isOpening && <p>{frontmatter.companyDescription}</p>}
