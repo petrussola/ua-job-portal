@@ -6,7 +6,7 @@ type OpeningFrontmatterProps = {
   companyDescription: string;
   location: string;
   author: string;
-  url: string;
+  link: string;
   tags: string[];
   isOpening: boolean;
 };

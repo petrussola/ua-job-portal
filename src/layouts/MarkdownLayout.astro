@@ -1,9 +1,13 @@
 ---
+import type { OpeningProps } from "../types/types";
 import BaseLayout from "./BaseLayout.astro";
 import dayjs from "dayjs";
 
+type Props = OpeningProps;
+
 const { frontmatter } = Astro.props;
 const formattedData = dayjs(frontmatter.pubDate).format("MMM, D YYYY");
+const displayUrl = frontmatter.link.split("//")[1];
 ---
 
 <BaseLayout pageTitle={frontmatter.title} shouldDisplayBack>
@@ -12,6 +16,14 @@ const formattedData = dayjs(frontmatter.pubDate).format("MMM, D YYYY");
       <h1>{frontmatter.title}</h1>
 
       <p class="publish-date">Published on: {formattedData}</p>
+
+      <p class="apply-link">
+        Apply today at: <a
+          href={frontmatter.link}
+          target="_blank"
+          referrerpolicy="no-referrer">{displayUrl}</a
+        >
+      </p>
     </div>
 
     {frontmatter.isOpening && <p>{frontmatter.companyDescription}</p>}
@@ -27,15 +39,20 @@ const formattedData = dayjs(frontmatter.pubDate).format("MMM, D YYYY");
     gap: 24px;
   }
 
-  .markdown-wrapper {
+  .markdown-header {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
 
+  .apply-link,
   .publish-date {
-    margin-bottom: 24px;
     color: rgb(var(--gray));
     font-style: italic;
+
+    a {
+      padding-bottom: 4px;
+      border-bottom: 2px solid rgb(var(--gray));
+    }
   }
 </style>
