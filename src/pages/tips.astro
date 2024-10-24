@@ -1,18 +1,18 @@
 ---
-import BlogPostEntry from "../components/BlogPostEntry.astro";
-import { fetchBlogposts } from "../helpers/fetch-data.astro";
+import TipEntry from "../components/TipEntry.astro";
+import { fetchTips } from "../helpers/fetch-data.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle = "Blog";
+const pageTitle = "JobHunt tips";
 
-const blogPosts = await fetchBlogposts();
+const tips = await fetchTips();
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
   <ul>
     {
-      blogPosts.map((post) => {
-        return <BlogPostEntry post={post} />;
+      tips.map((post) => {
+        return <TipEntry post={post} />;
       })
     }
   </ul>

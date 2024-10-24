@@ -7,9 +7,9 @@ export const fetchOpenings = async () => {
   return openings.reverse();
 };
 
-export const fetchBlogposts = async () => {
-  const posts = await Astro.glob<BlogpostProps>("../pages/blog/*md");
+export const fetchTips = async () => {
+  const tips = await Astro.glob<BlogpostProps>("../pages/tips/*md");
 
-  return posts.reverse();
+  return tips.reverse();
 };
 ---
