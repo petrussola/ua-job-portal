@@ -15,6 +15,10 @@ const pageTitle =
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
+  <h1>
+    {pageTitle}
+  </h1>
+
   <div class="company-tags-wrapper">
     {
       uniqueCompanies.map((company) => {
@@ -32,5 +36,10 @@ const pageTitle =
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
   }
 </style>

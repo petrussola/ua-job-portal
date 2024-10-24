@@ -10,6 +10,10 @@ const tips = await fetchTips();
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
+  <h1>
+    {pageTitle}
+  </h1>
+
   <ul>
     {
       tips.map((post) => {
@@ -24,5 +28,10 @@ const tips = await fetchTips();
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
   }
 </style>
