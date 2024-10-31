@@ -12,7 +12,7 @@ isOpening: true
 
 ## Job description
 
-We are seeking a talented React Developer to join our dynamic team. In this role, you will be responsible for building a cutting-edge drag-and-drop user interface for our CPQ solution. This interface will enable users to model and build UIs simultaneously, with AI integrated deeply into the experience to enhance functionality and user engagement. You will collaborate closely with our product, design, and AI teams to bring this innovative project to life.
+I am doing a test
 
 ## Key Responsibilities:
 
