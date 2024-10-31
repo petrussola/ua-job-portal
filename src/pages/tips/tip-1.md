@@ -1,15 +1,15 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
 title: "Blog post 1"
-pubDate: 2024-10-04
+pubDate: 2024-10-31
 isActive: true
 isOpening: false
-image: https://plus.unsplash.com/premium_photo-1676923829436-c32517e9c586?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://unsplash.com/photos/gray-laptop-computer-on-beige-wicker-chair-xcI7f25UQSs
 ---
 
 ## Blog post 1
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Odio sit fusce dapibus class iaculis lectus tincidunt rutrum. Dui semper sollicitudin ac consectetur lobortis enim faucibus accumsan enim. Praesent nunc tortor aliquet dignissim arcu curabitur nascetur laoreet. Iaculis dis at sociosqu torquent proin proin suspendisse imperdiet. Erat egestas ultrices condimentum tempus nullam dignissim mollis dictum blandit. Per pretium etiam pulvinar habitasse hac ultricies arcu curae. Mus odio iaculis lectus sagittis dictumst sagittis interdum. Velit enim ultricies magnis condimentum augue nunc. Tempor metus ultricies nunc fusce taciti, accumsan sociosqu torquent nibh.
+I am updating my first tip!
 
 Morbi natoque mauris risus vestibulum magna est rhoncus. Class parturient sociosqu porttitor semper consequat. Est curae elementum auctor amet at vivamus dolor aptent feugiat. Amet rutrum risus nascetur; pretium sem porta. Tortor adipiscing suspendisse phasellus id quam. Luctus metus eget, vel blandit ad conubia. Aliquet sapien mus himenaeos dictum suscipit. Vitae nostra inceptos auctor massa gravida consectetur vivamus luctus cursus. Tellus ex volutpat sociosqu arcu integer leo. Class gravida quisque enim neque facilisi per mi.
 
