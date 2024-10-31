@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "Blog post 1"
+title: "Why tech companies hire people with specific market knowledge and why this is important for your job search."
 pubDate: 2024-10-31
 isActive: true
 isOpening: false
-image: https://unsplash.com/photos/people-sitting-in-front-of-computer-monitors-dZxQn4VEv2M
+image: [https://unsplash.com/photos/people-sitting-in-front-of-computer-monitors-dZxQn4VEv2M]
 ---
 
 ## Why tech companies hire people with specific market knowledge and why this is important for your job search.
