@@ -4,7 +4,7 @@ title: "Why tech companies hire people with specific market knowledge and why th
 pubDate: 2024-10-31
 isActive: true
 isOpening: false
-image: [https://unsplash.com/photos/people-sitting-in-front-of-computer-monitors-dZxQn4VEv2M]
+image: https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 
