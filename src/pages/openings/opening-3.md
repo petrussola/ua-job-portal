@@ -6,7 +6,7 @@ company: "Google"
 companyDescription: "Google Customer Solutions (GCS) sales teams are trusted advisors and competitive sellers who maintain a relentless focus on customer success by bringing the best Google has to offer to small- and medium-sized businesses (SMBs), which are the backbone of our communities. As a member of our team, you will have the opportunity to work with company owners and make a real difference in their businesses by helping them grow. Together, we help shape the future of innovation for customers, partners, and sellers...and we have fun doing it."
 location: "Ireland"
 author: "Katya"
-link: "https://experlogix.bamboohr.com/careers/310](https://www.google.com/about/careers/applications/jobs/results/111680607095792326-account-strategist-sbs-engage-google-customer-solutions-englishukrainianrussian"
+link: "https://www.google.com/about/careers/applications/jobs/results/111680607095792326-account-strategist-sbs-engage-google-customer-solutions-englishukrainianrussian"
 tags: ["Google", "Sales", "Ireland"]
 isOpening: true
 ---
