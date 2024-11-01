@@ -1,50 +1,40 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "Junior React Developer"
+title: "Account Strategist, SBS Engage, Google Customer Solutions (English,Ukrainian,Russian)"
 pubDate: "2024-10-05"
 company: "Google"
-companyDescription: "Experlogix is a leading provider of Configure Price Quote (CPQ) solutions, dedicated to enhancing the digital commerce experience for businesses worldwide. We specialize in delivering innovative tools that streamline the sales process, empowering our clients to configure complex products and services with ease. As we continue to push the boundaries of what’s possible, we’re integrating advanced AI technologies to create more intuitive and powerful user experiences."
-location: "Remote"
+companyDescription: "Google Customer Solutions (GCS) sales teams are trusted advisors and competitive sellers who maintain a relentless focus on customer success by bringing the best Google has to offer to small- and medium-sized businesses (SMBs), which are the backbone of our communities. As a member of our team, you will have the opportunity to work with company owners and make a real difference in their businesses by helping them grow. Together, we help shape the future of innovation for customers, partners, and sellers...and we have fun doing it."
+location: "Ireland"
 author: "Katya"
-link: "https://experlogix.bamboohr.com/careers/310"
-tags: ["react", "frontend", "google"]
+link: "https://experlogix.bamboohr.com/careers/310](https://www.google.com/about/careers/applications/jobs/results/111680607095792326-account-strategist-sbs-engage-google-customer-solutions-englishukrainianrussian"
+tags: ["Google", "Sales", "Ireland"]
 isOpening: true
 ---
 
 ## Job description
 
-We are seeking a talented React Developer to join our dynamic team. In this role, you will be responsible for building a cutting-edge drag-and-drop user interface for our CPQ solution. This interface will enable users to model and build UIs simultaneously, with AI integrated deeply into the experience to enhance functionality and user engagement. You will collaborate closely with our product, design, and AI teams to bring this innovative project to life.
+Businesses that partner with Google come in all shapes, sizes and market caps, and no one Google advertising solution works for all. Your knowledge of online media combined with your communication skills and analytical abilities shapes how new and existing businesses grow. Using your relationship-building skills, you provide Google-caliber client service, research and market analysis. You anticipate how decisions are made, persistently explore and uncover the business needs of Google's key clients and understand how our range of product offerings can grow their business. Working with them, you set the direction and the strategy for how their advertising can reach thousands of users.
 
 ## Key Responsibilities:
+- Deliver against quarterly and product business growth goals.
+- Establish relationships via phone calls or e-mail marketing and conduct regular phone consultations and business discussions with clients to advise them on how to get the best return on their Google Ads investment.
+- Own a portfolio of small businesses by thoroughly understanding growth drivers identifying opportunities for growth, managing risks, and building quarterly plans for achievement.
+- Drive customer growth by delivering outstanding customer business experience and achieving customer business and marketing objectives.
 
-- Develop a dynamic drag-and-drop UI using React that allows users to model and build interfaces seamlessly.
-- Integrate advanced AI functionalities to enhance user experience and interface capabilities.
-- Collaborate with cross-functional teams including AI specialists, designers, backend engine development teams, and product managers.
-- Optimize components for maximum performance across a vast array of web-capable devices and browsers.
-- Write clean, maintainable, and well-documented code.
-- Participate in code reviews and provide constructive feedback to peers.
-- Stay up-to-date with the latest industry trends and technologies to ensure our products remain cutting-edge.
 
 ## Experience:
 
-- Proven experience as a React Developer or similar role.
-- Strong understand of complex state management in a large React application
-- Experience with AI integration in web applications is highly desirable.
+- Bachelor's degree or equivalent practical experience.
+- 2 years of experience in sales, account management, marketing, or consulting.
+- Ability to communicate in English, Ukrainian, and Russian fluently to manage client relationships in the region.
 
-## Skills:
 
-- Proficiency in React and its core principles.
-  Familiarity with React workflows (such as TanStack Query or Redux Toolkit).
-- Strong understanding of JavaScript fundamentals and build systems.
-- Experience with RESTful+gRPC APIs and asynchronous request handling.
-- Familiarity with front-end build pipelines and tools.
-- Experience with common front-end development tools such as Vite, Webpack, NPM, etc.
-- Strong problem-solving skills and attention to detail.
-- Excellent communication skills and ability to work collaboratively in a team environment.
-- Familiarity with AI and machine learning concepts.
-- Knowledge of UI/UX design principles.
+Preferred qualifications:
 
-## Preferred:
+- Certification in Google Digital Workshop or equivalent.
+- Familiarity with Google Ads and online advertising.
+- Ability to own a portfolio in an advertising or media sales context in Ukraine or Belarus, and consistently overachieve quotas to drive growth.
+- Ability to build narratives and utilize storytelling as a client engagement strategy.
+- Ability to multi-task and manage multiple projects at a time while paying attention to detail.
+- Ability to influence stakeholders internally and externally to deliver impact.
 
-- Proven track record working on a React front-end with regular releases and updates being shipped.
-- A passion for staying up to date on technologies without “building by hype”.
