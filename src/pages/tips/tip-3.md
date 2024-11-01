@@ -1,18 +1,41 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "Blog post 3"
+title: "LinkedIn profile optimization"
 pubDate: 2024-10-04
 isActive: true
 isOpening: false
-image: https://images.unsplash.com/photo-1561629625-edea42c6da34?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://plus.unsplash.com/premium_photo-1661505218403-c684557a824d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D
 ---
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Odio sit fusce dapibus class iaculis lectus tincidunt rutrum. Dui semper sollicitudin ac consectetur lobortis enim faucibus accumsan enim. Praesent nunc tortor aliquet dignissim arcu curabitur nascetur laoreet. Iaculis dis at sociosqu torquent proin proin suspendisse imperdiet. Erat egestas ultrices condimentum tempus nullam dignissim mollis dictum blandit. Per pretium etiam pulvinar habitasse hac ultricies arcu curae. Mus odio iaculis lectus sagittis dictumst sagittis interdum. Velit enim ultricies magnis condimentum augue nunc. Tempor metus ultricies nunc fusce taciti, accumsan sociosqu torquent nibh.
+If you don’t have a LinkedIn profile yet - create one. LinkedIn has become the number 1 tool for recruiters to look for candidates. Recruiters proactively look for people who might be a good candidate for the role they are looking to fill. 
+A well-optimized LinkedIn profile can significantly boost your professional visibility and attract potential employers. Here are some tips to help you optimize your profile:
 
-Morbi natoque mauris risus vestibulum magna est rhoncus. Class parturient sociosqu porttitor semper consequat. Est curae elementum auctor amet at vivamus dolor aptent feugiat. Amet rutrum risus nascetur; pretium sem porta. Tortor adipiscing suspendisse phasellus id quam. Luctus metus eget, vel blandit ad conubia. Aliquet sapien mus himenaeos dictum suscipit. Vitae nostra inceptos auctor massa gravida consectetur vivamus luctus cursus. Tellus ex volutpat sociosqu arcu integer leo. Class gravida quisque enim neque facilisi per mi.
+## 1. The basics: complete Your Profile:
+- Profile Picture: Use a professional headshot that clearly shows your face.
+- Headline: Clearly state your current job title and industry.
+- Summary: Write a concise summary highlighting your skills, experience, and career goals.
+- Experience: Detail your work history, including job titles, companies, dates, and key accomplishments.
+- Education: List your educational background, including degrees, certifications, and institutions.
+- Skills & Endorsements: List your skills and ask your connections to endorse them. Skills are extremely important as recruiters use “skills” search to filter down the candidates. Be very specific when you list your skills.
+- Customize Your Public Profile URL: View profile -> Edit your public profile and URL. Ideally it should look like linkedin.com/yournameandlastname 
 
-Mollis egestas dolor turpis posuere vivamus vel lacus purus. Est placerat cursus lectus fringilla, rutrum vivamus nulla. Aliquet libero placerat eleifend imperdiet mi. Sociosqu maecenas lacus convallis ridiculus tristique euismod. Imperdiet ac pretium magnis pharetra sit etiam conubia! Felis tellus erat id volutpat quisque facilisis semper? Ridiculus convallis primis vulputate ultrices; praesent ad metus nostra.
+## 2. Advanced: use relevant keywords:
+- Keyword Research: Identify keywords relevant to your industry and desired job roles. The title of the job you are looking to get should be found somewhere in your profile at least once.
+- Incorporate Keywords: Use these keywords in your headline, summary, and experience sections.
+- Open to Work status: Let recruiters know that you are open to work. Update the setting in your profile to signal to recruiters that you are open to offers (it can be either public status or private status, which is visible only to recruiters)
 
-Mi pellentesque iaculis odio dis curabitur ac; nullam etiam. Eros dolor pellentesque libero condimentum at sed vestibulum. Class fusce enim condimentum scelerisque ex non porta ante? Etiam eget tempor tellus malesuada libero in himenaeos mi. Urna quam rutrum etiam phasellus lectus lobortis eget. Libero maecenas montes magnis ac ornare tellus vehicula ac.
+## 3. Nice to have: build a network:
+- Connect with colleagues and ex-colleagues: Connect with people you know professionally.
+- Send personalized invitations: When sending connection requests, personalize your message. People are more likely to accept your invite if there is a message. 
 
-Arcu enim ligula libero mi tortor semper. Porta enim convallis luctus quis quam pellentesque vehicula est. Elit lacus hendrerit quis ridiculus, viverra natoque. Ornare class dolor lobortis, tellus lorem diam. Ipsum laoreet et potenti dis etiam leo etiam sapien mauris. Tristique dictum aliquet finibus congue nam tempus odio nunc. Ultrices sagittis quam at eleifend mollis. Commodo dapibus ridiculus libero interdum cubilia vitae felis donec. Efficitur fermentum hac tortor dolor class conubia.
+## 4. Nice to have: share High-Quality Content:
+- Post Regularly: Share industry articles, blog posts, and personal insights.
+- Engage with Others: Comment on posts, like articles, and participate in discussions.
+- Pictures in posts: Pictures in posts attract more attention, however it’s not recommended to add a picture of yourself in the post (unless it is about you). 
+
+## 5. Optimize Your Privacy Settings:
+- Review Privacy Settings: Ensure your privacy settings are configured to your preferences. Allow people to send you a message or connect with you. 
+- Control Visibility: Determine who can see your full profile and contact information. If you are looking for a job or a business opportunity it’s recommended to make your profile visible to all. 
+
+By following these tips, you can make your LinkedIn profile more attractive to recruiters and potential employers, increasing your chances of landing your dream job.
+
