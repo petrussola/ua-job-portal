@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownLayout.astro
 title: "Mobile Apps Consultant (Ukrainian)"
 pubDate: "2024-10-25"
 company: "Google"
-companyDescription: "Google Customer Solutions (GCS) sales teams are trusted advisors and competitive sellers who maintain a relentless focus on customer success by bringing the best Google has to offer to small- and medium-sized businesses (SMBs), which are the backbone of our communities. As a member of our team, you will have the opportunity to work with company owners and make a real difference in their businesses by helping them grow. Together, we help shape the future of innovation for customers, partners, and sellers...and we have fun doing it."
+companyDescription: "Google's line of products and services to our clients never stops growing. The Partnerships Development team is responsible for seeking and exploring new opportunities with Google's partners. Equipped with your business acumen and extensive product knowledge, you are right on the front line of interacting with our partners, and helping them find ways to grow using Google's newest product offerings. Your knowledge of relevant verticals and relationships with key industry players will help shape our great applications and content for products such as YouTube, Google TV and Commerce."
 location: "Ireland"
 author: "Katya"
 link: "https://www.google.com/about/careers/applications/jobs/results/139460227396182726-mobile-apps-consultant"
@@ -12,7 +12,7 @@ isOpening: true
 ---
 
 ## Job description
-Google's line of products and services to our clients never stops growing. The Partnerships Development team is responsible for seeking and exploring new opportunities with Google's partners. Equipped with your business acumen and extensive product knowledge, you are right on the front line of interacting with our partners, and helping them find ways to grow using Google's newest product offerings. Your knowledge of relevant verticals and relationships with key industry players will help shape our great applications and content for products such as YouTube, Google TV and Commerce.
+
 The Apps and Gaming Partnerships team is responsible for growing Google's business with strategic partner managers by providing partner management. The team works to build relationships, drive product adoptions, develop strategic business goals for partners, and deliver product insights to product teams.
 As a Mobile Apps Consultant, you will work with growing mobile developers and gaming studios by showcasing how a range of product offerings can grow their business.
 
