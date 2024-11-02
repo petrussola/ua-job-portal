@@ -11,20 +11,21 @@ const displayUrl = frontmatter.link ? frontmatter.link.split("//")[1] : "";
 ---
 
 <BaseLayout pageTitle={frontmatter.title} shouldDisplayBack>
-  <div class="markdown-wrapper">
-    <div class="markdown-header">
+  <div class="flex flex-col gap-6">
+    <div class="flex flex-col gap-3">
       <h1>{frontmatter.title}</h1>
 
-      <p class="publish-date">Published on: {formattedData}</p>
+      <p class="italic text-gray-600">Published on: {formattedData}</p>
 
       {
         !!displayUrl && (
-          <p class="apply-link">
+          <p class="italic text-gray-600">
             Apply today at:{" "}
             <a
               href={frontmatter.link}
               target="_blank"
               referrerpolicy="no-referrer"
+              class="pb-1 border-b-2 border-gray-600"
             >
               {displayUrl}
             </a>
@@ -38,28 +39,3 @@ const displayUrl = frontmatter.link ? frontmatter.link.split("//")[1] : "";
     <slot />
   </div>
 </BaseLayout>
-
-<style>
-  .markdown-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .markdown-header {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .apply-link,
-  .publish-date {
-    color: rgb(var(--gray));
-    font-style: italic;
-
-    a {
-      padding-bottom: 4px;
-      border-bottom: 2px solid rgb(var(--gray));
-    }
-  }
-</style>
