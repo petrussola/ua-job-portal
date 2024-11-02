@@ -11,22 +11,17 @@ const isActive =
   href === pathname ||
   href === "/" + subpath?.[0] ||
   (href === "/" && subpath?.[0] === "openings");
+const linkVariants = {
+  default: "inline-block no-underline p-6 border-b-4 border-transparent",
+  notActive: "hover:text-blue-600",
+  active: "font-bold underline hover:text-blue-600 border-b-4 border-blue-600",
+};
 ---
 
-<a href={href} class:list={[className, { active: isActive }]} {...props}>
+<a
+  href={href}
+  class={`${linkVariants.default} ${isActive ? linkVariants.active : linkVariants.default}`}
+  {...props}
+>
   <slot />
 </a>
-<style>
-  a {
-    display: inline-block;
-    text-decoration: none;
-  }
-  a.active {
-    font-weight: bolder;
-    text-decoration: underline;
-  }
-
-  a:hover {
-    color: rgb(var(--gray));
-  }
-</style>
