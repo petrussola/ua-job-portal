@@ -25,5 +25,5 @@ Here you should reiterate strong sides of your application - based on the job re
 ## Why do you want to work at this company?
 This question requires reading more about the company and really figuring out what has caught your attention? Are you a fan of their product? Did you like what you have read/heard about their culture? Do you know a specific person on the leadership team or immediate team you’d like to work with/work for? Do you like their size/growth potential/industry? 
 
-More in Part Two
+More in [Part Two](https://www.businessjobs.eu/tips/Interview-questions-two)
 
