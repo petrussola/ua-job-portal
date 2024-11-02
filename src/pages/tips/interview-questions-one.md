@@ -4,7 +4,7 @@ title: "Most typical interview questions. Part One"
 pubDate: 2024-11-02
 isActive: true
 isOpening: false
-image: https://images.unsplash.com/photo-1459499362902-55a20553e082?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1459499362902-55a20553e082?w=500
 ---
 
 The fact that you’ve made it to the interview stage is a huge milestone - congratulations. It means something about your Resume or your Cover letter caught the attention of the hiring team. Now at this stage, all you have to do is demonstrate further how you will be a fit for this role and learn more about the company and the role. Interviews are a two-sided process, remember that. 

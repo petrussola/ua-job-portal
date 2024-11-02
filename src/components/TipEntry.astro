@@ -1,9 +1,11 @@
 ---
 import type { BlogpostProps } from "../types/types";
 import FormattedDate from "./FormattedDate.astro";
+Image;
+import { Image } from "astro:assets";
 
 const DEFAULT_IMAGE =
-  "https://images.unsplash.com/photo-1485286162995-aa63d31c06cb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  "https://images.unsplash.com/photo-1485286162995-aa63d31c06cb?q=80&w=500";
 
 type Props = {
   post: BlogpostProps;
@@ -17,10 +19,11 @@ const { post } = Astro.props;
     class="flex flex-col max-w-80 min-w-72 gap-2 h-80 border rounded group-hover:shadow-md group-hover:shadow-gray-300"
   >
     <div class="overflow-hidden max-h-52">
-      <img
+      <Image
         src={post.frontmatter.image ?? DEFAULT_IMAGE}
         alt=""
-        class="w-full rounded group-hover:shadow-md group-hover:shadow-black object-cover object-center"
+        inferSize
+        class="w-full group-hover:shadow-md group-hover:shadow-black object-cover object-center rounded"
       />
     </div>
 

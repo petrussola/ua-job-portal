@@ -4,7 +4,7 @@ title: "LinkedIn profile optimization"
 pubDate: 2024-10-04
 isActive: true
 isOpening: false
-image: https://plus.unsplash.com/premium_photo-1661505218403-c684557a824d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D
+image: https://plus.unsplash.com/premium_photo-1661505218403-c684557a824d?w=500
 ---
 
 If you don’t have a LinkedIn profile yet - create one. LinkedIn has become the number 1 tool for recruiters to look for candidates. Recruiters proactively look for people who might be a good candidate for the role they are looking to fill. 

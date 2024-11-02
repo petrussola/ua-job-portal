@@ -4,7 +4,7 @@ title: "Most typical interview questions. Part Two"
 pubDate: 2024-11-02
 isActive: true
 isOpening: false
-image: https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500
 ---
 
 In [Part One](https://www.businessjobs.eu/tips/interview-questions-one) of these series we covered a few fundamental questions usually asked at the job interview.

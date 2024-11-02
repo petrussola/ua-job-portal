@@ -4,7 +4,7 @@ title: "Do you really need a cover letter?"
 pubDate: 2024-10-04
 isActive: true
 isOpening: false
-image: https://plus.unsplash.com/premium_photo-1663091866062-04370b5375c0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGNvdmVyJTIwbGV0dGVyfGVufDB8fDB8fHww
+image: https://plus.unsplash.com/premium_photo-1663091866062-04370b5375c0?w=500
 ---
 
 The short answer is yes: you do need a cover letter. 
