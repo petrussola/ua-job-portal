@@ -10,11 +10,11 @@ const tips = await fetchTips();
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
-  <h1>
+  <h1 class="mb-6 text-center">
     {pageTitle}
   </h1>
 
-  <ul>
+  <ul class="flex flex-wrap gap-8 justify-center md:justify-start">
     {
       tips.map((post) => {
         return <TipEntry post={post} />;
@@ -22,16 +22,3 @@ const tips = await fetchTips();
     }
   </ul>
 </BaseLayout>
-
-<style>
-  ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-
-  h1 {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-</style>
