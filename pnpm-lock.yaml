@@ -21,6 +21,9 @@ importers:
       astro:
         specifier: ^4.16.1
         version: 4.16.7(rollup@4.24.0)(typescript@5.6.3)
+      astro-simpleanalytics-plugin:
+        specifier: ^0.3.17
+        version: 0.3.17(rollup@4.24.0)(typescript@5.6.3)
       dayjs:
         specifier: ^1.11.13
         version: 1.11.13
@@ -713,6 +716,10 @@ packages:
 
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
+
+  astro-simpleanalytics-plugin@0.3.17:
+    resolution: {integrity: sha512-rSoBBRMYSTOJD4imVqKxq20VUcbsUiGZZ80uasdrDeshaxfWh5Ax+mXqhjUohlReO3122HhFK6/yG7vBdl9X3w==}
+    engines: {node: '>=18.19', pnpm: '>=8'}
 
   astro@4.16.7:
     resolution: {integrity: sha512-nON+8MUEkWTFwXbS4zsQIq4t0Fs42eulM4x236AL+qNnWfqNAOOqAnFxO1dxfJ1q+XopIBbbT9Mtev+0zH47PQ==}
@@ -2824,6 +2831,22 @@ snapshots:
   aria-query@5.3.2: {}
 
   array-iterate@2.0.1: {}
+
+  astro-simpleanalytics-plugin@0.3.17(rollup@4.24.0)(typescript@5.6.3):
+    dependencies:
+      astro: 4.16.7(rollup@4.24.0)(typescript@5.6.3)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - rollup
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - typescript
 
   astro@4.16.7(rollup@4.24.0)(typescript@5.6.3):
     dependencies:
