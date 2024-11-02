@@ -5,7 +5,7 @@ pubDate: "2024-10-31"
 company: "Meta"
 companyDescription: "Meta builds technologies that help people connect, find communities, and grow businesses. When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta is moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology. People who choose to build their careers by building with us at Meta help shape a future that will take us beyond what digital connection makes possible today—beyond the constraints of screens, the limits of distance, and even the rules of physics."
 location: "Ireland"
-link: "https://tesco.com/careers/whatever](https://www.metacareers.com/jobs/565332675863404/"
+link: "https://www.metacareers.com/jobs/565332675863404/"
 tags: ["Meta", "CEE", "Sales"]
 isOpening: true
 ---

@@ -7,7 +7,7 @@ companyDescription: "People deserve more from their money. More visibility, more
 
 As we continue our lightning-fast growth,‌ 2 things are essential to our success: our people and our culture. In recognition of our outstanding employee experience, we've been certified as a Great Place to Work™. So far, we have 10,000+ people working around the world, from our offices and remotely, to help us achieve our mission. And we're looking for more brilliant people. People who love building great products, redefining success, and turning the complexity of a chaotic world into the simplicity of a beautiful solution."
 location: "Remote"
-link: "https://experlogix.bamboohr.com/careers/310](https://www.revolut.com/en-IE/careers/position/legal-counsel-regulatory-ukraine-819510c2-55ed-42ee-8c42-0d0bd8d5b86c/"
+link: "https://www.revolut.com/en-IE/careers/position/legal-counsel-regulatory-ukraine-819510c2-55ed-42ee-8c42-0d0bd8d5b86c/"
 tags: ["legal", "Ukrainian", "revolut"]
 isOpening: true
 ---

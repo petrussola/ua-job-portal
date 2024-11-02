@@ -8,7 +8,7 @@ We work with clients from over 30 countries and speak over 60 languages.
 Since 2010, we’ve become an industry leader in premium outsourced customer support and turned global with 8 hubs around the world. We treat our team like our clients, surrounding them with unlimited care, an individual approach, and a wholesome positive experience. We welcome people with various backgrounds and experiences. Grab the chance to join us and send your CV in English, pointing out your outstanding skills!"
 location: "Remote"
 author: "Katya"
-link: "https://experlogix.bamboohr.com/careers/310](https://apply.workable.com/supportyourapp/j/4CFE2D66AD/"
+link: "https://apply.workable.com/supportyourapp/j/4CFE2D66AD/"
 tags: ["Customer Support", "Support Your App", "Remote"]
 isOpening: true
 ---
