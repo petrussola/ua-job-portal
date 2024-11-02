@@ -7,6 +7,7 @@ isOpening: false
 image: https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
+Why tech companies hire people with specific market knowledge and why this is important to you. Continue reading.
 
 Big tech companies hire for a number of positions people with specific market knowledge: in sales, marketing, customer support and other business roles. There are several reasons for that:
 ## 1. Faster Time to Market:
