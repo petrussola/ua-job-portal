@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "Why pecific market knowledge matters."
+title: "Why specific market knowledge matters."
 pubDate: 2024-10-31
 isActive: true
 isOpening: false
