@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "Why tech companies hire people with specific market knowledge and why this is important for your job search."
+title: "Why pecific market knowledge matters."
 pubDate: 2024-10-31
 isActive: true
 isOpening: false
