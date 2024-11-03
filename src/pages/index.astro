@@ -15,11 +15,11 @@ const pageTitle =
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
-  <h1>
+  <h1 class="pb-6 text-center text-2xl">
     {pageTitle}
   </h1>
 
-  <div class="company-tags-wrapper">
+  <div class="flex flex-wrap gap-x-2 gap-y-4">
     {
       uniqueCompanies.map((company) => {
         return <CompanyFilterButton company={company} />;
@@ -29,17 +29,3 @@ const pageTitle =
 
   <OpeningsList openingsList={allOpenings} />
 </BaseLayout>
-
-<style>
-  .company-tags-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-
-  h1 {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-</style>
