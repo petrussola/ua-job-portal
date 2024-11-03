@@ -9,20 +9,10 @@ type Props = {
 const { openingsList } = Astro.props;
 ---
 
-<ul>
+<ul class="flex list-none flex-col gap-6 py-6 w-full">
   {
     openingsList.map((job) => {
       return <OpeningEntry opening={job} />;
     })
   }
 </ul>
-
-<style>
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 24px 0;
-  }
-</style>
