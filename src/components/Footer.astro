@@ -4,11 +4,25 @@ import dayjs from "dayjs";
 const today = dayjs();
 ---
 
-<footer>
-  <ul class="footer-links">
-    <li>Request a 1:1 jobsearch consultation</li>
-    <li>Post your job vacancy</li>
-    <li><a href="mailto:bla@bla.bla">Contact us </a></li>
+<footer
+  class="flex flex-col items-center justify-center gap-4 border-t border-t-gray-300 bg-white py-6 text-gray-600 md:px-6"
+>
+  <ul class="flex flex-col items-center gap-2 md:flex-row md:gap-10">
+    <li
+      class="border-b-2 border-transparent hover:cursor-pointer hover:border-b-gray-600"
+    >
+      Request a 1:1 jobsearch consultation
+    </li>
+    <li
+      class="border-b-2 border-transparent hover:cursor-pointer hover:border-b-gray-600"
+    >
+      Post your job vacancy
+    </li>
+    <li
+      class="border-b-2 border-transparent hover:cursor-pointer hover:border-b-gray-600"
+    >
+      <a href="mailto:bla@bla.bla">Contact us </a>
+    </li>
   </ul>
 
   <div>
@@ -18,33 +32,3 @@ const today = dayjs();
     >
   </div>
 </footer>
-
-<style>
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 24px;
-    background: rgb(var(--gray-light));
-    color: rgb(var(--gray));
-    text-align: center;
-  }
-
-  .footer-links {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-
-    li {
-      list-style: none;
-      border-bottom: 2px solid transparent;
-    }
-
-    li:hover {
-      border-bottom: 2px solid rgb(var(--gray));
-      cursor: pointer;
-    }
-  }
-</style>
