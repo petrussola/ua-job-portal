@@ -10,11 +10,11 @@ const tips = await fetchTips();
 ---
 
 <BaseLayout pageTitle={pageTitle} displayContactBanner>
-  <h1 class="mb-6 text-center">
+  <h1 class="pb-6 text-center text-2xl">
     {pageTitle}
   </h1>
 
-  <ul class="flex flex-wrap gap-8 justify-center md:justify-start">
+  <ul class="flex flex-wrap justify-center gap-8 md:justify-start">
     {
       tips.map((post) => {
         return <TipEntry post={post} />;
