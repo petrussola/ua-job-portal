@@ -17,6 +17,8 @@ const {
   shouldDisplayBack = false,
   displayContactBanner = false,
 } = Astro.props;
+const publisherId = import.meta.env.PUBLISHER_ID;
+const adUnitId = import.meta.env.AD_UNIT_ID;
 ---
 
 <html lang="en">
@@ -25,6 +27,21 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <!-- AdManager tag -->
+    <script
+      type="text/partytown"
+      async
+      src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script type="text/partytown" define:vars={{ publisherId, adUnitId }}>
+      window.googletag = window.googletag || { cmd: [] };
+      googletag.cmd.push(function () {
+        googletag
+          .defineSlot(`/${adUnitId}/350x50`, [350, 50], publisherId)
+          .addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
     <title>{pageTitle}</title>
   </head>
   <body>
@@ -34,6 +51,14 @@ const {
       {shouldDisplayBack && <BackButton />}
 
       {displayContactBanner && <ContactBanner />}
+
+      <div id={publisherId} class="min-w-[350px] min-h-[50px]">
+        <script type="text/partytown" define:vars={{ publisherId }}>
+          window.googletag.cmd.push(function () {
+            window.googletag.display(publisherId);
+          });
+        </script>
+      </div>
 
       <slot />
     </main>
