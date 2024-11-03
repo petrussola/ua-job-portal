@@ -14,13 +14,14 @@ const isActive =
 const linkVariants = {
   default: "inline-block no-underline p-6 border-b-4 border-transparent",
   notActive: "hover:text-blue-600",
-  active: "font-bold underline hover:text-blue-600 border-b-4 border-blue-600",
+  active:
+    "font-bold underline hover:text-blue-600 border-b-4 border-b-blue-600",
 };
 ---
 
 <a
   href={href}
-  class={`${linkVariants.default} ${isActive ? linkVariants.active : linkVariants.default}`}
+  class={`${linkVariants.default} ${isActive ? linkVariants.active : linkVariants.notActive}`}
   {...props}
 >
   <slot />
