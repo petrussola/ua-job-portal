@@ -27,6 +27,7 @@ const adUnitId = import.meta.env.AD_UNIT_ID;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- AdManager tag -->
     <script
       type="text/partytown"
@@ -52,7 +53,7 @@ const adUnitId = import.meta.env.AD_UNIT_ID;
 
       {displayContactBanner && <ContactBanner />}
 
-      <div id={publisherId} class="min-w-[350px] min-h-[50px]">
+      <div id={publisherId} class="min-h-[50px] min-w-[350px]">
         <script type="text/partytown" define:vars={{ publisherId }}>
           window.googletag.cmd.push(function () {
             window.googletag.display(publisherId);
