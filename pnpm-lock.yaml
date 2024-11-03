@@ -49,6 +49,9 @@ importers:
       prettier-plugin-tailwindcss:
         specifier: ^0.6.8
         version: 0.6.8(prettier-plugin-astro@0.14.1)(prettier@3.3.3)
+      vite:
+        specifier: ^5.4.10
+        version: 5.4.10
 
 packages:
 

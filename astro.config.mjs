@@ -5,9 +5,11 @@ import tailwind from "@astrojs/tailwind";
 import partytown from "@astrojs/partytown";
 
 import sitemap from "@astrojs/sitemap";
+import { loadEnv } from "vite";
+const { URL } = loadEnv(process.env.NODE_ENV ?? "", process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
-  site: import.meta.env.URL,
+  site: URL ?? "",
   integrations: [tailwind(), partytown(), sitemap()],
 });
