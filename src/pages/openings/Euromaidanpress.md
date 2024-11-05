@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: "Head of Fundraising"
+title: "Fundraiser"
 pubDate: "2024-10-25"
 company: "Euromaidan Press"
 companyDescription: "Euromaidan Press, an independent English-language online publication about Ukraine, is searching for a fundraising manager to manage the system of attracting funds for media development."
