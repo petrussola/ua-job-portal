@@ -8,11 +8,11 @@ type Props = {
 const { opening } = Astro.props;
 ---
 
-<a href={opening.url}>
+<a href={opening.url} class="group">
   <li
-    class="flex w-full flex-col gap-4 rounded border-2 border-gray-300 p-4 hover:border-blue-600 hover:shadow"
+    class="flex w-full flex-col gap-4 rounded border border-gray-300 p-4 group-hover:border-gray-600 group-hover:shadow-md group-hover:shadow-gray-300"
   >
-    <h4 class="font-bold text-xl">{opening.frontmatter.title}</h4>
+    <h4 class="text-xl font-bold">{opening.frontmatter.title}</h4>
 
     <div class="flex flex-wrap justify-between">
       <p class="font-bold text-gray-600">{opening.frontmatter.company}</p>
