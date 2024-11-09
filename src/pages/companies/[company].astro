@@ -14,31 +14,33 @@ export async function getStaticPaths() {
           opening.frontmatter.company,
         );
 
-        return sanitisedCompanyName;
+        return {
+          sanitisedCompanyName,
+          companyName: opening.frontmatter.company,
+        };
       }),
     ),
   ];
 
   return uniqueCompanies.map((company) => {
     const filteredOpenings = allOpenings.filter(
-      (opening) => sanitiseString(opening.frontmatter.company) === company,
+      (opening) =>
+        sanitiseString(opening.frontmatter.company) ===
+        company.sanitisedCompanyName,
     );
 
     return {
-      params: { company },
-      props: { openings: filteredOpenings },
+      params: { company: company.sanitisedCompanyName },
+      props: { openings: filteredOpenings, companyName: company.companyName },
     };
   });
 }
 
-const { company } = Astro.params;
-const { openings } = Astro.props;
-
-const capitalisedCompany = company[0]?.toUpperCase() + company.slice(1);
+const { openings, companyName } = Astro.props;
 ---
 
-<BaseLayout pageTitle={capitalisedCompany} shouldDisplayBack>
-  <p>Openings in {capitalisedCompany}</p>
+<BaseLayout pageTitle={companyName} shouldDisplayBack>
+  <p>Openings in {companyName}</p>
 
   <OpeningsList openingsList={openings} />
 </BaseLayout>
