@@ -1,13 +1,16 @@
 ---
+import { sanitiseString } from "../helpers/sanitise-string.astro";
+
 type Props = {
   company: string;
 };
 
 const { company } = Astro.props;
+const sanitisedCompanyName = sanitiseString(company);
 ---
 
 <a
-  href={`/companies/${company.toLowerCase()}`}
+  href={`/companies/${sanitisedCompanyName}`}
   class="rounded-full border border-transparent bg-blue-600 px-4 py-2 text-white hover:border-blue-600 hover:bg-white hover:text-blue-600"
   >{company}</a
 >
