@@ -1,4 +1,5 @@
 ---
+import dayjs from "dayjs";
 import type { BlogpostProps, OpeningProps } from "../types/types";
 
 export const fetchOpenings = async () => {
@@ -9,7 +10,13 @@ export const fetchOpenings = async () => {
 
 export const fetchTips = async () => {
   const tips = await Astro.glob<BlogpostProps>("../pages/tips/*md");
+  // Sorts newest tip first
+  const sortedTips = tips.sort(
+    (a, b) =>
+      dayjs(b.frontmatter.pubDate).valueOf() -
+      dayjs(a.frontmatter.pubDate).valueOf()
+  );
 
-  return tips.reverse();
+  return sortedTips;
 };
 ---
