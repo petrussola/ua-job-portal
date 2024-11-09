@@ -1,5 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+
+const telegramUrl = import.meta.env.TELEGRAM_URL;
 ---
 
 <header
@@ -13,7 +15,7 @@ import HeaderLink from "./HeaderLink.astro";
   </nav>
 
   <div class="hidden md:block md:w-12">
-    <a href="#" target="_blank" referrerpolicy="no-referrer">
+    <a href={telegramUrl} target="_blank" referrerpolicy="no-referrer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         color="red"
