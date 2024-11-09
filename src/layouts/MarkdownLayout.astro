@@ -13,7 +13,7 @@ const displayUrl = frontmatter.link ? frontmatter.link.split("//")[1] : "";
 <BaseLayout pageTitle={frontmatter.title} shouldDisplayBack>
   <div class="flex flex-col gap-6">
     <div class="flex flex-col gap-3">
-      <h1>{frontmatter.title}</h1>
+      <h1 class="text-4xl font-bold">{frontmatter.title}</h1>
 
       <p class="italic text-gray-600">Published on: {formattedData}</p>
 
@@ -25,7 +25,7 @@ const displayUrl = frontmatter.link ? frontmatter.link.split("//")[1] : "";
               href={frontmatter.link}
               target="_blank"
               referrerpolicy="no-referrer"
-              class="pb-1 border-b-2 border-gray-600"
+              class="border-b-2 border-gray-600 pb-1"
             >
               {displayUrl}
             </a>
